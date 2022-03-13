@@ -38,8 +38,8 @@ The goal of this project is to create a Password Generator using Javascript.
 8. Added While loop for windows prompt to allow user to correct an invalid response.
 
 ## Demo for Portfolio: Disha Barua
-![portfolio demo](./assets/images/pass-gen.gif)
-![photo of the Webpage after modification.](./assets/images/pass-gen.png)
+![portfolio demo](./assets/images/pass_gen.gif)
+![photo of the Webpage after modification.](./assets/images/pass_gen.png)
 
 # Reference
 ## Acceptance Criteria
