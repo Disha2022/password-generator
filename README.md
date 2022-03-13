@@ -16,7 +16,7 @@ SO THAT I can create a strong password that provides greater security
 
 
 ## Project Description
-
+The goal of this project is to create a Password Generator using Javascript.
 
 ## Tools
 1. CSS
@@ -25,19 +25,21 @@ SO THAT I can create a strong password that provides greater security
 
 
 ## index.html
-1. Put files in different folders and added right links in index.html.
+1. Updated style and script references to match the new directories.
 
 ## script.js
 1. Added variables for maximum and minimum length.
 2. Added windows prompts for lower case, upper case, special characters and numbers.
-
+3. Created Generate Password function 
+4. Created variables to check properties required by user.
+5. Created if statements to check the user input.
+6. Created Windows Prompt to collect user input.
+7. Added if statement as failsafe for length of the password to prevent invalid response from user.
+8. Added While loop for windows prompt to allow user to correct an invalid response.
 
 ## Demo for Portfolio: Disha Barua
 ![portfolio demo](./assets/images/pass-gen.gif)
 ![photo of the Webpage after modification.](./assets/images/pass-gen.png)
-
-
-
 
 # Reference
 ## Acceptance Criteria

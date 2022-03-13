@@ -5,13 +5,10 @@ const upper = "abcdefghijklmnopqrstuvwxyz"
 const lower = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const numbers = "0123456789";
 const symbols = "!@#$%^&*_-+=";
-//length of password
-var min_length = 8; //Minimum length of password
-var max_length = 128; //Maximum length of the password
-
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
+
 // Generate Password
 function generatePassword(p_length, upper_case, lower_case, numeric, special_c) {
 
@@ -31,6 +28,9 @@ function generatePassword(p_length, upper_case, lower_case, numeric, special_c) 
   //checking for special characters requirement
   if (special_c === "1") {
     characters = symbols + characters
+  }
+  if (characters === ""){
+    alert("Please select at least 1 character type.")
   }
   var password = "";
   for (let i = 0; i < p_length; i++) {
