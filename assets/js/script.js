@@ -13,7 +13,7 @@ var max_length = 128; //Maximum length of the password
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 // Generate Password
-function generatePassword(upper_case, lower_case, numeric, special_c) {
+function generatePassword(p_length, upper_case, lower_case, numeric, special_c) {
 
   var characters = "";
   //checking for upper case requirement
@@ -53,15 +53,23 @@ function writePassword() {
   
   //Criterias for Password
   var upper_case = window.prompt("Click 1 if you want Upper Case letters. Click 0 if you don't.")
-  if (upper_case !=="1"|| upper_case !=="0") {
-    alert("Please select a valid response.")
-    return
+  while (upper_case !=="1" && upper_case !=="0" && upper_case!==null) {
+    upper_case = window.prompt("Please select a valid response. Click 1 if you want Upper Case letters. Click 0 if you don't.")
   }
   var lower_case = window.prompt("Click 1 if you want Lower Case letters. Click 0 if you don't.")
+  while (lower_case !=="1" && lower_case !=="0"&& lower_case!==null) {
+    lower_case = window.prompt("Please select a valid response. Click 1 if you want Lower Case letters. Click 0 if you don't.")
+  }
   var numeric = window.prompt("Click 1 if you want Numeric Numbers. Click 0 if you don't.")
-  var special_c = window.prompt("Click 1 if you want Special Characters letters. Click 0 if you don't.")
-  alert("Please click the Generate button for your preferred password; reload the page to pick a password with different length")
-  var password = generatePassword(upper_case, lower_case, numeric, special_c);
+  while (numeric !=="1" && numeric !=="0"&& numeric!==null) {
+    numeric = window.prompt("Please select a valid response. Click 1 if you want Numeric Numbers. Click 0 if you don't.")
+    }
+  var special_c = window.prompt("Click 1 if you want Special Characters. Click 0 if you don't.")
+ while (special_c !=="1" && special_c !=="0" && special_c!==null) {
+    special_c = window.prompt("Please select a valid response. Click 1 if you want Special Characters. Click 0 if you don't.")
+    }
+  
+  var password = generatePassword(p_length, upper_case, lower_case, numeric, special_c);
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
@@ -71,4 +79,3 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-}
