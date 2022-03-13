@@ -5,9 +5,9 @@
 Disha Barua
 
 ## Link
-Deployed code: 
+Deployed code: https://disha2022.github.io/password-generator/
 
-Github repository:
+Github repository: https://github.com/Disha2022/password-generator
 
 ## User Story
 AS AN employee with access to sensitive data
