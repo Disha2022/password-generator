@@ -52,21 +52,21 @@ function writePassword() {
   }
   
   //Criterias for Password
-  var upper_case = window.prompt("Click 1 if you want Upper Case letters. Click 0 if you don't.")
+  var upper_case = window.prompt("Type 1 if you want Upper Case letters. Type 0 if you don't.")
   while (upper_case !=="1" && upper_case !=="0" && upper_case!==null) {
-    upper_case = window.prompt("Please select a valid response. Click 1 if you want Upper Case letters. Click 0 if you don't.")
+    upper_case = window.prompt("Please select a valid response. Type 1 if you want Upper Case letters. Type 0 if you don't.")
   }
-  var lower_case = window.prompt("Click 1 if you want Lower Case letters. Click 0 if you don't.")
+  var lower_case = window.prompt("Type 1 if you want Lower Case letters. Type 0 if you don't.")
   while (lower_case !=="1" && lower_case !=="0"&& lower_case!==null) {
-    lower_case = window.prompt("Please select a valid response. Click 1 if you want Lower Case letters. Click 0 if you don't.")
+    lower_case = window.prompt("Please select a valid response. Type 1 if you want Lower Case letters. Type 0 if you don't.")
   }
-  var numeric = window.prompt("Click 1 if you want Numeric Numbers. Click 0 if you don't.")
+  var numeric = window.prompt("Type 1 if you want Numeric Numbers. Type 0 if you don't.")
   while (numeric !=="1" && numeric !=="0"&& numeric!==null) {
-    numeric = window.prompt("Please select a valid response. Click 1 if you want Numeric Numbers. Click 0 if you don't.")
+    numeric = window.prompt("Please select a valid response. Type 1 if you want Numeric Numbers. Type 0 if you don't.")
     }
-  var special_c = window.prompt("Click 1 if you want Special Characters. Click 0 if you don't.")
+  var special_c = window.prompt("Type 1 if you want Special Characters. Type 0 if you don't.")
  while (special_c !=="1" && special_c !=="0" && special_c!==null) {
-    special_c = window.prompt("Please select a valid response. Click 1 if you want Special Characters. Click 0 if you don't.")
+    special_c = window.prompt("Please select a valid response. Type 1 if you want Special Characters. Type 0 if you don't.")
     }
   
   var password = generatePassword(p_length, upper_case, lower_case, numeric, special_c);
