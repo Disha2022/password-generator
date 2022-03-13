@@ -23,11 +23,13 @@ SO THAT I can create a strong password that provides greater security
 2. HTML
 3. Javascript
 
+
 ## index.html
- 
+1. Put files in different folders and added right links in index.html.
 
 ## script.js
-
+1. Added variables for maximum and minimum length.
+2. Added windows prompts for lower case, upper case, special characters and numbers.
 
 
 ## Demo for Portfolio: Disha Barua
@@ -58,6 +60,7 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
 ## Review
+---
 
 You are required to submit BOTH of the following for review:
 
